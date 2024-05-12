@@ -1,0 +1,5 @@
+Illustrates a bug on macOS, wherein attempting to bind 127.0.0.1:0 fails.
+
+Repro:
+$ clang socket-0.c -o socket-0 && ./socket-0
+Bind failed: Can't assign requested address
